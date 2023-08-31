@@ -1,7 +1,17 @@
 body {
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
     background-color: beige;
-}
+    background-image: linear-gradient(to bottom, #ff0,#f00);
+    margin: 0px;
+    background-attachment: fixed;
 
+}
+#main {
+    border-style: solid;
+    border-color:black;
+  }
 p{
     color: brown;
 }
