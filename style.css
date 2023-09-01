@@ -1,6 +1,5 @@
 *{  
     font-family: 'Readex Pro', sans-serif;
-    font-weight: 700;
     margin: 1px;
     padding: 0px;
     box-sizing: border-box;
@@ -64,7 +63,7 @@ top: -2px;
 }
 .navegacao{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     left: 0px;
     position: absolute;
 }
@@ -77,25 +76,19 @@ top: -2px;
     display: flex;
     float: left;
 }
-.navegacao-bar li{ 
-    font-weight: 400;
-    text-align: right;
-    background-color: #0f9690;
-    padding: 50px;
+.navegacao-bar ul{
+    padding-left: 20px; 
+    
 }
 .container-logo{
+    font-weight: 700;
     display: flex;
-    width: 300px;
-    padding: 0px 20px 0px 20px;
 
 }
 .container-logo div{
          display:flex;
 }
-.container-logo .decimal a{
-    padding-top: 50%;
-    padding-left: 50px;
-}
+
 .container-logo .decimal{
     position: inherit;
     margin-top: 50%;
