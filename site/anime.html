@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Sprite Animation</title>
+    <style>
+        body {
+            padding-left: 50%;
+            padding-top: 30%;
+           text-align: center;
+            background-color: rgb(54, 54, 54);
+        }
+        #spriteContainer:hover {
+          box-shadow: 0 0 10px #eee,
+          0px 0px 50px #455ad2  ,
+          0px 0px 60px #455ad2  ,
+          0px 0px 70px #455ad2  ;
+         
+        }
+
+        #spriteContainer{
+            text-align: center;
+            padding: -20px;
+            margin: -20px;
+            border-radius: 150px;
+            width: 300px;
+            height: 300px;
+            transition: background-color .4s ;
+            background-image: url("images/sprites_final.png");
+            animation: sprite .3s steps(24) infinite;
+        }
+
+        @keyframes sprite {
+            100% {
+                background-position: -7224px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id=spriteContainer></div>
+
+    
+</body>
+
+</html>
