@@ -1,7 +1,14 @@
-*{
+*{  
+
+    font-family: 'Didact Gothic', sans-serif;
     margin: 1px;
     padding: 0px;
     box-sizing: border-box;
+    padding-left: ;
+}
+p{
+    font-family: 'Didact Gothic', sans-serif;
+    
 }
 
 body {
