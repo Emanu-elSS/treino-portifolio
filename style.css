@@ -19,16 +19,21 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
         height: 0px;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 7.5%;
 }
 
 .container{
     display: grid;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav nav nav"
+    grid-template-rows: 0.2fr 1fr 1fr 0.4fr;
+    grid-template-areas: " nav nav nav"
                          "sidebar main main"
                          "sidebar conteudo1 conteudo2"
-                         "sidebar footer footer"; 
+                         "sidebar footer footer";
+    grid-gap: 0.5em;
 }
 .navegacao:not(li.navegacao-bar) {
     background-color: rgba(0,45,255, 0.5);
@@ -54,30 +59,41 @@ body {
     float: left;
     background-color: peru;
     grid-area: nav;
+    border-radius: 325px;
 }
 
 #main{
     background-color: red;
     grid-area: main;
+    border-radius: 25px;
+    box-shadow: 3px 3px 2em #888;
 }
 
 #sidebar{
     background-color: blue;
     grid-area: sidebar;
+    border-radius:25px;
+    box-shadow: 3px 3px 2em #888;
 }
 
 #conteudo1{
     background-color: pink;
     grid-area: conteudo1;
+    border-radius:25px;
+    box-shadow: 3px 3px 2em #888;
 }
 
 #conteudo2{background-color: green;
     grid-area: conteudo2;
+    border-radius:25px;
+    box-shadow: 3px 3px 2em #888;
 }
 
 #footer{background-color: yellowgreen;
     grid-area: footer;
-}
+    border-radius:25px;
+    box-shadow: 3px 3px 2em #888;
+} 
 
 
 
