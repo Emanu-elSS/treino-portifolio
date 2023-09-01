@@ -1,20 +1,89 @@
 *{  
-
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 700;
     margin: 1px;
     padding: 0px;
     box-sizing: border-box;
-    padding-left: ;
+
 }
 p{
-    font-family: 'Didact Gothic', sans-serif;
-    
+ 
+
 }
 
 body {
-    background-image: linear-gradient( 220deg, #05161a, #072e33, #0c7075, #0f9690, #6da5c0, #294d61);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 0px;
+       
+        background-image: linear-gradient( 
+        220deg, #05161a, #072e33, #0c7075, #0f9690, #6da5c0, #294d61);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 0px;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav nav nav"
+                         "sidebar main main"
+                         "sidebar conteudo1 conteudo2"
+                         "sidebar footer footer"; 
+}
+.navegacao:not(li.navegacao-bar) {
+    background-color: rgba(0,45,255, 0.5);
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+}
+.navegacao-bar {
+    display: flex;
+    float: left;
+}
+.container-logo div{
+    background-color: red;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: #05161a;
+}
+
+#nav{
+    padding: 50px;
+    float: left;
+    background-color: peru;
+    grid-area: nav;
+}
+
+#main{
+    background-color: red;
+    grid-area: main;
+}
+
+#sidebar{
+    background-color: blue;
+    grid-area: sidebar;
+}
+
+#conteudo1{
+    background-color: pink;
+    grid-area: conteudo1;
+}
+
+#conteudo2{background-color: green;
+    grid-area: conteudo2;
+}
+
+#footer{background-color: yellowgreen;
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
